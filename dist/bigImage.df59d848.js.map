@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/bigImage.js"],"names":["bigImage"],"mappings":";AAEC,aAFM,SAASA,IACP,OAAA,EACR,OAAA,eAAA,QAAA,aAAA,CAAA,OAAA,IAAA,QAAA,SAAA","file":"bigImage.df59d848.js","sourceRoot":"../src","sourcesContent":["export function bigImage() {\n  return 3;\n}\n"]}
