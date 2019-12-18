@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>Guia front-end</title>
     <script src="index.js"></script>
-    <script src="js/bigImage.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -20,8 +19,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" />Guia Front-end </a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="Logo Frontend Guide"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -55,18 +56,14 @@
         </div>
       </nav>
     </header>
+    <section id="hero">
+      <div class="hero-header">
+        <h1 class="hero-title">Frontend guide</h1>
+        <h2 class="hero-subtitle">A practical guide to learn some front end development tools</h2>
+      </div>
+    </section>
 
     <main>
-      <section id="big-image">
-        <div class="wrapper-image">
-          <div class="title">
-            <h1>Frontend guide</h1>
-          </div>
-          <div class="subtitle">
-            <h2>A practical guide to learn some front end development tools</h2>
-          </div>
-        </div>
-      </section>
       <section id="categories">
         <div class="container">
           <div class="row">
@@ -74,6 +71,17 @@
               <div class="card">
                 <img
                   class="card-img-top"
+                  srcset="
+                    img/bundler-182.jpeg 182w,
+                    img/bundler-206.jpeg 206w,
+                    img/bundler-274.jpeg 274w,
+                    img/bundler-343.jpeg 343w,
+                    img/bundler-525.jpeg 525w
+                  "
+                  sizes="(max-width: 575px) 100vw,
+                 (max-width: 776px) 50vw,
+                 (max-width:991px) 33vw,
+                 274px"
                   src="img/bundler.jpeg"
                   alt="Els module bundlers permeten aplicacions js escrites de forma modular"
                 />
@@ -83,7 +91,7 @@
                     Module bundlers are tools frontend developers used to bundle JavaScript modules
                     into a single JavaScript files that can be executed in the browser.
                   </p>
-                  <a href="module-bundlers.html" class="btn btn-primary">Read more</a>
+                  <a href="module-bundlers.html" class="btn red-button">Read more</a>
                 </div>
               </div>
             </div>
@@ -92,6 +100,17 @@
                 <img
                   onmouseover="bigImage()"
                   class="card-img-top"
+                  srcset="
+                    img/preprocessors-182.jpeg 182w,
+                    img/preprocessors-206.jpeg 206w,
+                    img/preprocessors-274.jpeg 274w,
+                    img/preprocessors-343.jpeg 343w,
+                    img/preprocessors-525.jpeg 525w
+                  "
+                  sizes="(max-width: 575px) 100vw,
+                 (max-width: 776px) 50vw,
+                 (max-width:991px) 33vw,
+                 274px"
                   src="img/pexels3.jpeg"
                   alt="Els preprocessadors són programes que permeten escriure els fulls d’estils ampliant la seva funcionalitat"
                 />
@@ -101,7 +120,7 @@
                     CSS Preprocessors are increasingly becoming a mainstay in the workflow of front
                     end web developers.
                   </p>
-                  <a href="preprocessors.html" class="btn btn-primary">Read more</a>
+                  <a href="preprocessors.html" class="btn red-button">Read more</a>
                 </div>
               </div>
             </div>
@@ -109,6 +128,17 @@
               <div class="card">
                 <img
                   class="card-img-top"
+                  srcset="
+                    img/computer-182.jpg 182w,
+                    img/computer-206.jpg 206w,
+                    img/computer-274.jpg 274w,
+                    img/computer-343.jpg 343w,
+                    img/computer-525.jpg 525w
+                  "
+                  sizes="(max-width: 575px) 100vw,
+               (max-width: 776px) 50vw,
+               (max-width:991px) 33vw,
+               274px"
                   src="img/pexels6.jpg"
                   alt="HTML, CSS and Js are the main front-end languages"
                 />
@@ -118,19 +148,24 @@
                     HTML, CSS, and JavaScript are three district coding languages that together are
                     used to build Website and Web Applications
                   </p>
-                  <a href="languages.html" class="btn btn-primary">Read more</a>
+                  <a href="languages.html" class="btn red-button">Read more</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div class="wave"></div>
     </main>
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <img src="img/logo.png" alt="logo Guia Front-end" />Guia Front-end
+            <div class="bocadillo">
+              <span class="contact">Contacta amb nosaltres</span>
+              Tel. 666 66 66 66<br />
+              Mail info@example.com<br />
+            </div>
           </div>
           <div class="col-sm">
             <p>Activitat realitzada per Guillem Plans per l'assignatura "Eines HTML i CSS"</p>

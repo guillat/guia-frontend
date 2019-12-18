@@ -19,8 +19,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" />Guia Front-end </a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="logo Frontend guide"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,33 +59,74 @@
 
     <main>
       <article>
-        <div class="container">
-          <h1 class="article-title">PostCSS</h1>
-          <img src="img/postcss.jpg" class="img-fluid article-img" />
-          <p>PostCSS is a software development tool that uses JavaScript-based plugins to automate routine CSS operations. The tool has been used to develop the code of Wikipedia,Facebook, WordPress and GitHub. PostCSS is a top-favored CSS tool among npm users. It was designed by Andrey Sitnik with the idea taking its origin in his front-end work for Evil Martians.</p>
-          <p>Unlike Sass and Less, PostCSS is not a CSS-compiled template language but a framework to develop CSS tools. However, it can be used to develop a template language such as Sass and LESS.</p>
-         
-<p>The PostCSS core consists of:</p>
-<ul>
-    <li>CSS parser that generates an object tree (AST) for a line of CSS-code;</li>
-    <li>Set of classes that comprise the tree;</li>
-    <li>CSS generator that generates a CSS line for the object tree;</lli>
-    <li>Code map generator for the CSS changes made.</li>
-    </ul>
-    <p>All the useful features are made available through plugins. The plugins are small programs working with the object tree. After the core has transformed a CSS string into an object tree, the plugins, by turn, analyze and change the tree. Then the PostCSS core generates a new CSS string for the plugin-changed tree. </p>
+        <div class="container-fluid article-image">
+          <picture>
+            <source media="(max-width: 575px)" srcset="img/postcss-vertical.jpg" />
 
-    <div class="source">
+            <source
+              media="(min-width: 576px)"
+              srcset="
+                img/postcss-576.jpg   576w,
+                img/postcss-744.jpg   744w,
+                img/postcss-900.jpg   900w,
+                img/postcss-1200.jpg 1200w,
+                img/postcss-1500.jpg 1500w
+              "
+              sizes="(min-width: 576px) 100vw,           
+                 576px"
+            />
+            <img
+              src="img/postcss-1500.jpg"
+              class="featured-image"
+              alt="PostCSS is a software development tool that uses JavaScript"
+            />
+          </picture>
+          <h1 class="article-title">PostCSS</h1>
+        </div>
+        <div class="container">
+          <p>
+            PostCSS is a software development tool that uses JavaScript-based plugins to automate
+            routine CSS operations. The tool has been used to develop the code of
+            Wikipedia,Facebook, WordPress and GitHub. PostCSS is a top-favored CSS tool among npm
+            users. It was designed by Andrey Sitnik with the idea taking its origin in his front-end
+            work for Evil Martians.
+          </p>
+          <p>
+            Unlike Sass and Less, PostCSS is not a CSS-compiled template language but a framework to
+            develop CSS tools. However, it can be used to develop a template language such as Sass
+            and LESS.
+          </p>
+
+          <p>The PostCSS core consists of:</p>
+          <ul>
+            <li>CSS parser that generates an object tree (AST) for a line of CSS-code;</li>
+            <li>Set of classes that comprise the tree;</li>
+            <li>CSS generator that generates a CSS line for the object tree;</li>
+            <li>Code map generator for the CSS changes made.</li>
+          </ul>
+          <p>
+            All the useful features are made available through plugins. The plugins are small
+            programs working with the object tree. After the core has transformed a CSS string into
+            an object tree, the plugins, by turn, analyze and change the tree. Then the PostCSS core
+            generates a new CSS string for the plugin-changed tree.
+          </p>
+
+          <div class="source">
             Source:<a href="https://en.wikipedia.org/wiki/PostCSS">Wikipedia. </a>
           </div>
         </div>
       </article>
+      <div class="wave"></div>
     </main>
-
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <img src="img/logo.png" alt="logo Guia Front-end" />Guia Front-end
+            <div class="bocadillo">
+              <span class="contact">Contacta amb nosaltres</span>
+              Tel. 666 66 66 66<br />
+              Mail info@example.com<br />
+            </div>
           </div>
           <div class="col-sm">
             <p>Activitat realitzada per Guillem Plans per l'assignatura "Eines HTML i CSS"</p>

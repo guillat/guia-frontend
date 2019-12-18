@@ -17,10 +17,13 @@
       href="../node_modules/@fortawesome/fontawesome-free/css/all.css"
     />
   </head>
+
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" />Guia Front-end </a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="Logo Fronten guide"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,41 +60,100 @@
 
     <main>
       <article>
+        <div class="container-fluid article-image">
+          <picture>
+            <source media="(max-width: 575px)" srcset="img/html-vertical.jpg" />
+
+            <source
+              media="(min-width: 576px)"
+              srcset="
+                img/html-576.jpg   576w,
+                img/html-744.jpg   744w,
+                img/html-900.jpg   900w,
+                img/html-1200.jpg 1200w,
+                img/html-1500.jpg 1500w
+              "
+              sizes="(min-width: 576px) 100vw,           
+                 576px"
+            />
+            <img
+              src="img/html-1500.jpg"
+              class="featured-image"
+              alt="HTML is the standard markup language for documents designed to be displayed in a web browser"
+            />
+          </picture>
+          <h1 class="article-title">Hypertext Markup Language (HTML)</h1>
+        </div>
         <div class="container">
-          <h1 class="article-title">Language in web development</h1>
-            <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+          <p>
+            Hypertext Markup Language (HTML) is the standard markup language for documents designed
+            to be displayed in a web browser. It can be assisted by technologies such as Cascading
+            Style Sheets (CSS) and scripting languages such as JavaScript.
+          </p>
 
-            <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. </p>
-            <div class="container">
-                <h2>Video about HTML</h2>
-                <div class="row mt-4">
-                    <div class="col-sm-8 offset-sm-2">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UB1O30fR-EE" allowfullscreen></iframe>
-                                </div>
-                    </div>
-                </div>
-            </div>            
-        </article>
+          <p>
+            Web browsers receive HTML documents from a web server or from local storage and render
+            the documents into multimedia web pages. HTML describes the structure of a web page
+            semantically and originally included cues for the appearance of the document.
+          </p>
+
+          <h2>Video about HTML</h2>
+          <div class="row mt-4">
+            <div class="col-sm-8 offset-sm-2">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/UB1O30fR-EE"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <picture>
+            <source media="(max-width: 575px)" srcset="img/img-html-576.jpg" />
+
+            <source
+              media="(min-width: 576px)"
+              srcset="
+                img/img-html-500.jpg   500w,
+                img/img-html-700.jpg   700w,
+                img/img-html-900.jpg   900w,
+                img/img-html-1100.jpg 1100w
+              "
+              sizes="(min-width: 577px) 100vw,           
+                 500px"
+            />
+            <img
+              src="img/html-1500.jpg"
+              class="img-fluid"
+              alt="HTML is the standard markup language for documents designed to be displayed in a web browser"
+            />
+          </picture>
+        </div>
+      </article>
+      <div class="wave"></div>
     </main>
-
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <img src="img/logo.png" alt="logo Guia Front-end" />Guia Front-end
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="bocadillo">
+              <span class="contact">Contacta amb nosaltres</span>
+              Tel. 666 66 66 66<br />
+              Mail info@example.com<br />
+            </div>
+          </div>
+          <div class="col-sm">
+            <p>Activitat realitzada per Guillem Plans per l'assignatura "Eines HTML i CSS"</p>
+          </div>
+          <div class="col-sm">
+            <p>
+              Imatges sota llicència <i class="fab fa-creative-commons"></i> CC0 extretes de
+              <a href="http://www.pexel.com">www.pexels.com</a>
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-sm">
-        <p>Activitat realitzada per Guillem Plans per l'assignatura "Eines HTML i CSS"</p>
-      </div>
-      <div class="col-sm">
-        <p>
-          Imatges sota llicència <i class="fab fa-creative-commons"></i> CC0 extretes de
-          <a href="http://www.pexel.com">www.pexels.com</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>

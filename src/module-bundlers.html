@@ -2,7 +2,7 @@
 <html lang="ca">
   <head>
     <meta charset="utf-8" />
-    <title>Module bundlers</title>
+    <title>What’s A Module Bundler?</title>
     <script src="index.js"></script>
     <link
       rel="stylesheet"
@@ -19,8 +19,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" />Guia Front-end </a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="Logo Frontend Guide"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -58,8 +60,13 @@
     <main>
       <article>
         <div class="container">
-          <h1 class="article-title">What’s A Module Bundler?</h1>
+          <h1 class="category-title">What’s A Module Bundler?</h1>
           <p>
+            <img
+              src="img/module-bundler.png"
+              class="img-fluid article-img"
+              alt="A module bundler is a tool for frontend developement"
+            />
             A module bundler is a tool that takes pieces of JavaScript and their dependencies and
             bundles them into a single file, usually for use in the browser. You may have used tools
             such as <a href="http://browserify.org/">Browserify</a>,
@@ -70,12 +77,7 @@
             It usually starts with an entry file, and from there it bundles up all of the code
             needed for that entry file.
           </p>
-          <div class="container">
-              <div class="row mt-4 mb-4">
-                <div class="col-sm-8 offset-sm-2">
-                    <img src="img/module-bundler.png" class="img-fluid">
-                </div>
-              </div>
+
           <p>
             Starting from an entry point (such as app.js above), the goal of dependency resolution
             is to look for all of the dependencies of your code (other pieces of code that it needs
@@ -84,12 +86,92 @@
             can use.
           </p>
           <p>Most popular module bundlers</p>
-          <ul>
-            <li><a href="parcel.html">Parcel</a></li>
-            <li>Webpack</li>
-            <li>Browserify</li>
-          </ul>
-          
+          <div class="caixa">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="parcel.html">
+                  <img
+                    srcset="
+                      img/parcel-category-188.jpg 188w,
+                      img/parcel-category-235.jpg 235w,
+                      img/parcel-category-288.jpg 288w,
+                      img/parcel-category-383.jpg 383w,
+                      img/parcel-category-465.jpg 465w,
+                      img/parcel-category-510.jpg 510w
+                    "
+                    sizes="(max-width: 570px) 90vw, (max-width: 992px) 33vw, (min-width: 993px) 25vw, 576px"
+                    src="img/parcel-category-383.jpg"
+                    class="img-fluid"
+                    alt="Parcel is a web application bundler"
+                  />
+                </a>
+              </div>
+
+              <div class="col-md-7">
+                <a href="parcel.html"><h4 class="card-title">Parcel</h4></a>
+                <p class="card-text">
+                  Parcel is a web application bundler, differentiated by its developer experience.
+                  It offers blazing fast performance utilizing multicore processing, and requires
+                  zero configuration.
+                </p>
+                <a href="parcel.html">More info about Parcel</a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  srcset="
+                    img/webpack-category-188.jpg 188w,
+                    img/webpack-category-235.jpg 235w,
+                    img/webpack-category-288.jpg 288w,
+                    img/webpack-category-383.jpg 383w,
+                    img/webpack-category-465.jpg 465w,
+                    img/webpack-category-510.jpg 510w
+                  "
+                  sizes="(max-width: 570px) 90vw, (max-width: 992px) 33vw, (min-width: 993px) 25vw, 576px"
+                  src="img/webpack-category-383.jpg"
+                  class="img-fluid"
+                  alt="LESS is a dynamic preprocessor "
+                />
+              </div>
+
+              <div class="col-md-7">
+                <h4 class="card-title">Webpack</h4>
+                <p class="card-text">
+                  It is a module bundler primarily for JavaScript, but it can transform front-end
+                  assets like HTML, CSS, and images if the corresponding loaders are included
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  class="img-fluid"
+                  srcset="
+                    img/rollup-category-188.jpg 188w,
+                    img/rollup-category-235.jpg 235w,
+                    img/rollup-category-288.jpg 288w,
+                    img/rollup-category-383.jpg 383w,
+                    img/rollup-category-465.jpg 465w,
+                    img/rollup-category-510.jpg 510w
+                  "
+                  sizes="(max-width: 570px) 90vw, (max-width: 992px) 33vw, (min-width: 993px) 25vw, 576px"
+                  src="img/rollup-category-383.jpg"
+                  alt=" Rollup is a module bundler for JavaScript "
+                />
+              </div>
+
+              <div class="col-md-7">
+                <h4 class="card-title">Rollup.js</h4>
+                <p class="card-text">
+                  Rollup is a module bundler for JavaScript which compiles small pieces of code into
+                  something larger and more complex, such as a library or application.
+                </p>
+              </div>
+            </div>
+          </div>
 
           <div class="source">
             Source:<a
@@ -99,13 +181,17 @@
           </div>
         </div>
       </article>
+      <div class="wave"></div>
     </main>
-
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <img src="img/logo.png" alt="logo Guia Front-end" />Guia Front-end
+            <div class="bocadillo">
+              <span class="contact">Contacta amb nosaltres</span>
+              Tel. 666 66 66 66<br />
+              Mail info@example.com<br />
+            </div>
           </div>
           <div class="col-sm">
             <p>Activitat realitzada per Guillem Plans per l'assignatura "Eines HTML i CSS"</p>

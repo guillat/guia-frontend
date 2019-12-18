@@ -2,8 +2,9 @@
 <html lang="ca">
   <head>
     <meta charset="utf-8" />
-    <title>Preprocessors</title>
+    <title>Guia front-end</title>
     <script src="index.js"></script>
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -19,8 +20,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" />Guia Front-end </a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.svg" alt="Log Frontend Guide"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -58,10 +61,10 @@
     <main>
       <article>
         <div class="container">
-          <h1 class="article-title">Preprocessadors CSS</h1>
+          <h1 class="category-title">Preprocessadors CSS</h1>
 
           <p>
-            <img src="img/pexels4.jpeg" class="img-fluid article-img" />
+            <img src="img/pexels4.jpeg" class="img-fluid article-img" alt="How to generate CSS?" />
             CSS preprocessor is a program that lets you generate CSS from the preprocessor's own
             unique syntax. There are many CSS preprocessors to choose from, however most CSS
             preprocessors will add some features that don't exist in pure CSS, such as mixin,
@@ -70,14 +73,104 @@
           </p>
 
           <p>
-            To use a CSS preprocessor, you must install a CSS compiler on your web server.
+            To use a CSS preprocessor, you must install a CSS compiler on your web server. A server
+            is a software or hardware offering a service to a user, usually referred to as client. A
+            hardware server is a shared computer on a network, usually powerful and housed in a data
+            center. A software server (often running on a hardware server) is a program that
+            provides services to client programs or a user interface to human clients. Services are
+            provided generally over local area networks or wide area networks such as the internet.
+            A client program and server program traditionally connect by passing messages encoded
+            using a protocol over an API.
           </p>
           <p>Here are a few of the most popular CSS preprocessors:</p>
-          <ul>
-            <li>LESS</li>
-            <li>Stylus</li>
-            <li><a href="postcss.html">PostCSS</a></li>
-          </ul>
+          <div class="caixa">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="postcss.html">
+                  <img
+                    srcset="
+                      img/postcss-category-188.jpg 188w,
+                      img/postcss-category-235.jpg 235w,
+                      img/postcss-category-288.jpg 288w,
+                      img/postcss-category-383.jpg 383w,
+                      img/postcss-category-465.jpg 465w,
+                      img/postcss-category-510.jpg 510w
+                    "
+                    sizes="(max-width: 570px) 90vw, (max-width: 992px) 33vw, (min-width: 993px) 25vw, 576px"
+                    src="img/postcss-category-383.jpg"
+                    class="img-fluid"
+                    alt="HTML ies the backbone of any website"
+                  />
+                </a>
+              </div>
+
+              <div class="col-md-7">
+                <a href="postcss.html"><h4 class="card-title">PostCSS</h4></a>
+                <p class="card-text">
+                  PostCSS is a software development tool that uses JavaScript-based plugins to
+                  automate routine CSS operations. The tool has been used to develop the code of
+                  Wikipedia,Facebook, WordPress and GitHub.
+                </p>
+                <a href="postcss.html">More info about PostCSS</a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  srcset="
+                    img/less-category-188.jpg 188w,
+                    img/less-category-235.jpg 235w,
+                    img/less-category-288.jpg 288w,
+                    img/less-category-383.jpg 383w,
+                    img/less-category-465.jpg 465w,
+                    img/less-category-510.jpg 510w
+                  "
+                  sizes="(max-width: 570px) 90vw, (max-width: 992px) 33vw, (min-width: 993px) 25vw, 576px"
+                  src="img/less-category-383.jpg"
+                  class="img-fluid"
+                  alt="LESS is a dynamic preprocessor "
+                />
+              </div>
+
+              <div class="col-md-7">
+                <h4 class="card-title">LESS</h4>
+                <p class="card-text">
+                  Less (Leaner Style Sheets; sometimes stylized as LESS) is a dynamic preprocessor
+                  style sheet language that can be compiled into Cascading Style Sheets (CSS) and
+                  run on the client side or server side
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  srcset="
+                    img/stylus-category-188.jpg 188w,
+                    img/stylus-category-235.jpg 235w,
+                    img/stylus-category-288.jpg 288w,
+                    img/stylus-category-383.jpg 383w,
+                    img/stylus-category-465.jpg 465w,
+                    img/stylus-category-510.jpg 510w
+                  "
+                  sizes="(max-width: 570px) 90vw, (max-width: 992px) 33vw, (min-width: 993px) 25vw, 576px"
+                  src="img/stylus-category-510.jpg"
+                  class="img-fluid"
+                  alt="LESS is a dynamic preprocessor "
+                />
+              </div>
+
+              <div class="col-md-7">
+                <h4 class="card-title">STYLUS</h4>
+                <p class="card-text">
+                  Stylus is a dynamic stylesheet preprocessor language that is compiled into
+                  Cascading Style Sheets (CSS). Its design is influenced by Sass and LESS. It's
+                  regarded as the fourth most used CSS preprocessor syntax.[
+                </p>
+              </div>
+            </div>
+          </div>
           <div class="source">
             Source:<a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor"
               >Mozilla MDN web docs. Preprocessors.
@@ -85,13 +178,17 @@
           </div>
         </div>
       </article>
+      <div class="wave"></div>
     </main>
-
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <img src="img/logo.png" alt="logo Guia Front-end" />Guia Front-end
+            <div class="bocadillo">
+              <span class="contact">Contacta amb nosaltres</span>
+              Tel. 666 66 66 66<br />
+              Mail info@example.com<br />
+            </div>
           </div>
           <div class="col-sm">
             <p>Activitat realitzada per Guillem Plans per l'assignatura "Eines HTML i CSS"</p>
