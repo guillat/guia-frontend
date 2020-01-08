@@ -60,9 +60,57 @@
       </nav>
     </header>
     <section id="hero">
-      <div class="hero-header">
-        <h1 class="hero-title">Frontend guide</h1>
-        <h2 class="hero-subtitle">A practical guide to learn some front end development tools</h2>
+      <div class="hero">
+        <div class="hero-overlay">
+          <h1 class="hero-title">Frontend guide</h1>
+          <h2 class="hero-subtitle">A practical guide to learn some front end development tools</h2>
+        </div>
+        <picture>
+          <source
+            media="(max-width: 577px)"
+            type="image/webp"
+            srcset="img/home-400.webp 400w, img/home-576.webp 576w"
+            sizes="(min-width: 577px) 100vw,           
+                577px"
+          />
+          <source
+            media="(max-width: 577px)"
+            type="image/jpg"
+            srcset="img/home-400.jpg 400w, img/home-576.jpg 576w"
+            sizes="(min-width: 577px) 100vw,           
+               576px"
+          />
+          <source
+            media="(min-width: 577px)"
+            type="image/webp"
+            srcset="
+              img/home-744.webp   744w,
+              img/home-900.webp   900w,
+              img/home-1200.webp 1200w,
+              img/home-1500.webp 1500w
+            "
+            sizes="(min-width: 577px) 100vw,           
+             576px"
+          />
+          <source
+            media="(min-width: 577px)"
+            type="image/jpg"
+            srcset="
+              img/home-744.jpg   744w,
+              img/home-900.jpg   900w,
+              img/home-1200.jpg 1200w,
+              img/home-1500.jpg 1500w
+            "
+            sizes="(min-width: 577px) 100vw,           
+            577px"
+          />
+
+          <img
+            src="img/home-1200.jpg"
+            class="hero-image"
+            alt="Guia Frontend per a desenvolupadors"
+          />
+        </picture>
       </div>
     </section>
 
@@ -72,22 +120,42 @@
           <div class="row">
             <div class="col-sm">
               <div class="card">
-                <img
-                  class="card-img-top"
-                  srcset="
-                    img/bundler-182.jpeg 182w,
-                    img/bundler-206.jpeg 206w,
-                    img/bundler-274.jpeg 274w,
-                    img/bundler-343.jpeg 343w,
-                    img/bundler-525.jpeg 525w
-                  "
-                  sizes="(max-width: 575px) 100vw,
-                 (max-width: 776px) 50vw,
-                 (max-width:991px) 33vw,
-                 274px"
-                  src="img/bundler.jpeg"
-                  alt="Els module bundlers permeten aplicacions js escrites de forma modular"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/bundler-182.webp 182w,
+                      img/bundler-206.webp 206w,
+                      img/bundler-274.webp 274w,
+                      img/bundler-343.webp 343w,
+                      img/bundler-525.webp 525w
+                    "
+                    sizes="(max-width: 575px) 100vw,
+                     (max-width: 776px) 50vw,
+                     (max-width:991px) 33vw,
+                     274px"
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      img/bundler-182.jpeg 182w,
+                      img/bundler-206.jpeg 206w,
+                      img/bundler-274.jpeg 274w,
+                      img/bundler-343.jpeg 343w,
+                      img/bundler-525.jpeg 525w
+                    "
+                    sizes="(max-width: 575px) 100vw,
+                   (max-width: 776px) 50vw,
+                   (max-width:991px) 33vw,
+                   274px"
+                  />
+
+                  <img
+                    class="card-img-top"
+                    src="img/bundler.jpeg"
+                    alt="Els module bundlers permeten aplicacions js escrites de forma modular"
+                  />
+                </picture>
                 <div class="card-body">
                   <h4 class="card-title">Module bundlers</h4>
                   <p class="card-text">
@@ -100,23 +168,42 @@
             </div>
             <div class="col-sm">
               <div class="card">
-                <img
-                  onmouseover="bigImage()"
-                  class="card-img-top"
-                  srcset="
-                    img/preprocessors-182.jpeg 182w,
-                    img/preprocessors-206.jpeg 206w,
-                    img/preprocessors-274.jpeg 274w,
-                    img/preprocessors-343.jpeg 343w,
-                    img/preprocessors-525.jpeg 525w
-                  "
-                  sizes="(max-width: 575px) 100vw,
-                 (max-width: 776px) 50vw,
-                 (max-width:991px) 33vw,
-                 274px"
-                  src="img/pexels3.jpeg"
-                  alt="Els preprocessadors són programes que permeten escriure els fulls d’estils ampliant la seva funcionalitat"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/preprocessors-182.webp 182w,
+                      img/preprocessors-206.webp 206w,
+                      img/preprocessors-274.webp 274w,
+                      img/preprocessors-343.webp 343w,
+                      img/preprocessors-525.webp 525w
+                    "
+                    sizes="(max-width: 575px) 100vw,
+                      (max-width: 776px) 50vw,
+                      (max-width:991px) 33vw,
+                      274px"
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      img/preprocessors-182.jpeg 182w,
+                      img/preprocessors-206.jpeg 206w,
+                      img/preprocessors-274.jpeg 274w,
+                      img/preprocessors-343.jpeg 343w,
+                      img/preprocessors-525.jpeg 525w
+                    "
+                    sizes="(max-width: 575px) 100vw,
+                      (max-width: 776px) 50vw,
+                      (max-width:991px) 33vw,
+                      274px"
+                  />
+                  <img
+                    onmouseover="bigImage()"
+                    class="card-img-top"
+                    src="img/pexels3.jpeg"
+                    alt="Els preprocessadors són programes que permeten escriure els fulls d’estils ampliant la seva funcionalitat"
+                  />
+                </picture>
                 <div class="card-body">
                   <h4 class="card-title">Preprocessors</h4>
                   <p class="card-text">
@@ -129,22 +216,41 @@
             </div>
             <div class="col-sm">
               <div class="card">
-                <img
-                  class="card-img-top"
-                  srcset="
-                    img/computer-182.jpg 182w,
-                    img/computer-206.jpg 206w,
-                    img/computer-274.jpg 274w,
-                    img/computer-343.jpg 343w,
-                    img/computer-525.jpg 525w
-                  "
-                  sizes="(max-width: 575px) 100vw,
-               (max-width: 776px) 50vw,
-               (max-width:991px) 33vw,
-               274px"
-                  src="img/pexels6.jpg"
-                  alt="HTML, CSS and Js are the main front-end languages"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/computer-182.webp 182w,
+                      img/computer-206.webp 206w,
+                      img/computer-274.webp 274w,
+                      img/computer-343.webp 343w,
+                      img/computer-525.webp 525w
+                    "
+                    sizes="(max-width: 575px) 100vw,
+                          (max-width: 776px) 50vw,
+                          (max-width:991px) 33vw,
+                          274px"
+                  />
+                  <source
+                    type="image/jpg"
+                    srcset="
+                      img/computer-182.jpg 182w,
+                      img/computer-206.jpg 206w,
+                      img/computer-274.jpg 274w,
+                      img/computer-343.jpg 343w,
+                      img/computer-525.jpg 525w
+                    "
+                    sizes="(max-width: 575px) 100vw,
+                          (max-width: 776px) 50vw,
+                          (max-width:991px) 33vw,
+                          274px"
+                  />
+                  <img
+                    class="card-img-top"
+                    src="img/pexels6.jpg"
+                    alt="HTML, CSS and Js are the main front-end languages"
+                  />
+                </picture>
                 <div class="card-body">
                   <h4 class="card-title">HTML, CSS and JS</h4>
                   <p class="card-text">

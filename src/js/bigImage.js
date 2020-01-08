@@ -1,3 +1,4 @@
-export function bigImage() {
-  return 3;
-}
+var bigImage;
+export default bigImage = () => {
+  return console.log('2');
+};

@@ -65,10 +65,25 @@
       <article>
         <div class="container-fluid article-image">
           <picture>
-            <source media="(max-width: 575px)" srcset="img/html-vertical.jpg" />
+            <source media="(max-width: 575px)" type="image/webp" srcset="img/html-vertical.webp" />
+            <source media="(max-width: 575px)" type="image/jpg" srcset="img/html-vertical.jpg" />
 
             <source
               media="(min-width: 576px)"
+              type="image/webp"
+              srcset="
+                img/html-576.webp   576w,
+                img/html-744.webp   744w,
+                img/html-900.webp   900w,
+                img/html-1200.webp 1200w,
+                img/html-1500.webp 1500w
+              "
+              sizes="(min-width: 576px) 100vw,           
+                 576px"
+            />
+            <source
+              media="(min-width: 576px)"
+              type="image/jpg"
               srcset="
                 img/html-576.jpg   576w,
                 img/html-744.jpg   744w,
@@ -77,7 +92,7 @@
                 img/html-1500.jpg 1500w
               "
               sizes="(min-width: 576px) 100vw,           
-                 576px"
+               576px"
             />
             <img
               src="img/html-1500.jpg"
@@ -113,10 +128,24 @@
             </div>
           </div>
           <picture>
-            <source media="(max-width: 575px)" srcset="img/img-html-576.jpg" />
+            <source media="(max-width: 575px)" type="image/webp" srcset="img/img-html-576.webp" />
+            <source media="(max-width: 575px)" type="image/jpg" srcset="img/img-html-576.jpg" />
 
             <source
               media="(min-width: 576px)"
+              type="image/webp"
+              srcset="
+                img/img-html-500.webp   500w,
+                img/img-html-700.webp   700w,
+                img/img-html-900.webp   900w,
+                img/img-html-1100.webp 1100w
+              "
+              sizes="(min-width: 577px) 100vw,           
+                 500px"
+            />
+            <source
+              media="(min-width: 576px)"
+              type="image/jpg"
               srcset="
                 img/img-html-500.jpg   500w,
                 img/img-html-700.jpg   700w,

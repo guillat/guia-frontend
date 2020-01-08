@@ -63,20 +63,37 @@
       <article>
         <div class="container-fluid article-image">
           <picture>
-            <source media="(max-width: 575px)" srcset="img/postcss-vertical.jpg" />
-
+            <source 
+            media="(max-width: 575px)" type="image/webp" srcset="img/postcss-vertical.webp" />
+            <source
+            media="(max-width: 575px)" type="image/jpg" srcset="img/postcss-vertical.jpg" />
+            
             <source
               media="(min-width: 576px)"
+              type="image/webp"
               srcset="
-                img/postcss-576.jpg   576w,
-                img/postcss-744.jpg   744w,
-                img/postcss-900.jpg   900w,
-                img/postcss-1200.jpg 1200w,
-                img/postcss-1500.jpg 1500w
+                img/postcss-576.webp   576w,
+                img/postcss-744.webp  744w,
+                img/postcss-900.webp  900w,
+                img/postcss-1200.webp 1200w,
+                img/postcss-1500.webp 1500w
               "
               sizes="(min-width: 576px) 100vw,           
                  576px"
             />
+            <source
+            media="(min-width: 576px)"
+            type="image/jpg"
+            srcset="
+              img/postcss-576.jpg   576w,
+              img/postcss-744.jpg   744w,
+              img/postcss-900.jpg   900w,
+              img/postcss-1200.jpg 1200w,
+              img/postcss-1500.jpg 1500w
+            "
+            sizes="(min-width: 576px) 100vw,           
+               576px"
+          />
             <img
               src="img/postcss-1500.jpg"
               class="featured-image"
